@@ -16,6 +16,7 @@
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel='stylesheet' href='/css/main.css' type='text/css' media='all' />
 	<link href='http://fonts.googleapis.com/css?family=Nunito:300,400' rel='stylesheet' type='text/css'>
+	<script src="https://fontastic.s3.amazonaws.com/nJtawUMbWkg2xWqC5QTcXf/icons.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,34 +30,41 @@
 </head>
 
 <body>
-	<div id="background_cycler" class="top">
-		<header>
-			<div class="wrapper">
-				<h1>Fayetteville Coworking</h1>
+	<div class="container">
+		<div id="background_cycler" class="top row">
+			
+				<div class="wrapper">
+					<header>
+						<h1 class="logo">FC<br/>*</h1>
+						<h1 class="site-name">Fayetteville Coworking</h1>
+					</header>
 
-				<h2>Work Independently, Not Alone</h2>
+					<h2>Work Independently, Not Alone</h2>
 
-				<p>We combat the loneliness and distractions of working from home or alone at a coffee shop by working together.</p>
+					<p>We combat the loneliness and distractions of working from home or alone at a coffee shop by working together.</p>
 
-				<p>Every week independent workers gather during the workday to work alongside each other for real human interaction, productivity, and community.</p>
+					<p>Every week independent workers gather during the workday to work alongside each other for real human interaction, productivity, and community.</p>
 
-				<p><strong>Will you be there?</strong></p>
-			</div>
-		</header>
+					<p><strong>Will you be there?</strong></p>
+					
+				</div>
+			</header>
 
-		<section class="active" style="background-image: url(/img/1.jpg)"> </section>
-	
+			<section class="active col" style="background-image: url(/img/1.jpg)"> </section>
+
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="#" target="_blank"><svg class="icon-list"><use xlink:href="#icon-list"></use></svg>Subscribe to our mailing list</a></li>
+				<li><a href="http://facebook.com/groups/fayettevillecoworking" target="_blank"><svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg>Join our Facebook group</a></li>
+				<li><a href="http://twitter.com/faycoworking" target="_blank"><svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg> Follow us on Twitter</a></li>
+				<li><a href="#" target="_blank"><svg class="icon-calendar"><use xlink:href="#icon-calendar"></use></svg> See our upcoming events on Google Calendar</a></li>
+				<li><a href="mailto:info@fayettevillecoworking.com" target="_blank"><svg class="icon-email"><use xlink:href="#icon-email"></use></svg>Contact us via email</a></li>
+			</ul>
+		</nav>
+
 	</div>
-
-	<nav>
-		<ul>
-			<li><a href="#" target="_blank">Subscribe to our mailing list</a></li>
-			<li><a href="http://facebook.com/groups/fayettevillecoworking" target="_blank">Join our Facebook group</a></li>
-			<li><a href="http://twitter.com/faycoworking" target="_blank">Follow us on Twitter</a></li>
-			<li><a href="#" target="_blank">See our upcoming events on Google Calendar</a></li>
-			<li><a href="mailto:info@fayettevillecoworking.com" target="_blank">Contact us via email</a></li>
-		</ul>
-	</nav>
 
 </body>
 </html>
