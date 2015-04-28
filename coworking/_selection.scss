@@ -1,0 +1,25 @@
+::selection {
+    background: $cyanfive;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: $cyanfive;
+    color: #fff;
+}
+
+::-webkit-input-placeholder {
+    color: $cyanfive;
+}
+
+:-moz-placeholder {
+    color: $cyanfive;
+}
+
+::-moz-placeholder {
+    color: $cyanfive;
+}
+
+:-ms-input-placeholder {
+    color: $cyanfive;
+}
