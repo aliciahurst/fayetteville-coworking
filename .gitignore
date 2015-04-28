@@ -66,3 +66,6 @@ node_modules
 .idea/
 library/vendors/composer
 assets/img/.DS_Store
+
+# Directories #
+coworking
