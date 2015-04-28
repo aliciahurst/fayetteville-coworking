@@ -31,36 +31,69 @@
 
 <body>
 	<div class="container">
-		<div id="background_cycler" class="top row">
-			
-				<div class="wrapper">
+		<div id="background_cycler" class="top">
+
+				<div class="hero">
+
 					<header>
 						<h1 class="logo">FC<br/>*</h1>
-						<h1 class="site-name">Fayetteville Coworking</h1>
+						<h1 class="name">Fayetteville Coworking</h1>
 					</header>
 
-					<h2>Work Independently, Not Alone</h2>
+					<div class="info">
+						<h2>Work Independently, Not Alone</h2>
 
-					<p>We combat the loneliness and distractions of working from home or alone at a coffee shop by working together.</p>
+						<p>We combat the loneliness and distractions of working from home or alone at a coffee shop by working together.</p>
 
-					<p>Every week independent workers gather during the workday to work alongside each other for real human interaction, productivity, and community.</p>
+						<p>Every week independent workers gather during the workday to work alongside each other for real human interaction, productivity, and community.</p>
 
-					<p><strong>Will you be there?</strong></p>
-					
+						<p><strong>Will you be there?</strong></p>
+					</div>
+
 				</div>
-			</header>
 
-			<section class="active col" style="background-image: url(/img/1.jpg)"> </section>
+			<section class="active images" style="background-image: url(/img/1.jpg)"> </section>
 
 		</div>
 
 		<nav>
 			<ul>
-				<li><a href="#" target="_blank"><svg class="icon-list"><use xlink:href="#icon-list"></use></svg>Subscribe to our mailing list</a></li>
-				<li><a href="http://facebook.com/groups/fayettevillecoworking" target="_blank"><svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg>Join our Facebook group</a></li>
-				<li><a href="http://twitter.com/faycoworking" target="_blank"><svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg> Follow us on Twitter</a></li>
-				<li><a href="#" target="_blank"><svg class="icon-calendar"><use xlink:href="#icon-calendar"></use></svg> See our upcoming events on Google Calendar</a></li>
-				<li><a href="mailto:info@fayettevillecoworking.com" target="_blank"><svg class="icon-email"><use xlink:href="#icon-email"></use></svg>Contact us via email</a></li>
+				<li class="hidden"></li>
+				<a href="#" target="_blank">
+					<li>
+						<svg class="icon-list"><use xlink:href="#icon-list"></use></svg>
+						<h3>Subscribe to our mailing list</h3>
+						<p>We'll send you an email whenever we have an important announcement.</p>
+					</li> 
+				</a>
+				<a href="http://facebook.com/groups/fayettevillecoworking" target="_blank">
+					<li>
+						<svg class="icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+						<h3 class="">Join our Facebook group</h3>
+						<p>You'll become an integral part of our community by joining our discussions and sharing your thoughts.</p></li>
+					</li>
+				</a>
+				<a href="http://twitter.com/faycoworking" target="_blank">
+					<li>
+						<svg class="icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+						<h3>Follow us on Twitter</h3>
+						<p>If you're an avid tweeter, you'll love reminders about events and enjoying the fun stuff we share.</p>
+					</li>
+				</a>
+				<a href="#" target="_blank">
+					<li>
+						<svg class="icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
+						<h3>See our upcoming events</h3>
+						<p>Never miss a coworking session! Add our calendar to your Google Calendar and meet up with us!</p>
+					</li>
+				</a>
+				<a href="mailto:info@fayettevillecoworking.com" target="_blank">
+					<li>
+						<svg class="icon-email"><use xlink:href="#icon-email"></use></svg>
+						<h3>Send us an email</h3>
+						<p>Comments? Questions? Opportunities? We look forward to hearing from you.</p>
+					</li>
+				</a>
 			</ul>
 		</nav>
 

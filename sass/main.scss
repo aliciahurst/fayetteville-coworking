@@ -9,14 +9,56 @@
 
 $black: #000000;
 $white: #ffffff;
-$turquoise: #1abc9c;
-$emerald: #2ecc71;
+$turquoise: #47EBCF;
+$emerald: #47EB99;
 $red: #e74c3c;
 $yellow: #f1c40f;
 $orange: #e67e22;
+$base: 1rem;
+$ratio: 1.333;
 
-$large: "(min-width: 56em)";
-$small: "(max-width: 56em)";
+$large: "(min-width: 60em)";
+$small: "(max-width: 60em)";
+
+////////
+/// COLOR MIXIN
+////////
+
+@mixin colors($max-count, $color-frequency){
+  $color: 360/$max-count;
+
+  @for $i from 1 through $max-count {
+    &:nth-child(#{$max-count}n + #{$i}) {
+      background: adjust_hue(hsl(($i - 1)*($color / $color-frequency), 80%, 60%),150);
+      @include transition(background, 0.2s ease-in-out);
+      &:hover {
+      	      background: saturate(darken(adjust_hue(hsl(($i - 1)*($color / $color-frequency), 80%, 60%),150), 45),20);
+      }
+    }
+  }
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+////////
+
+.hidden {
+	display: none;
+}
 
 html, body {
 	height: 100%;
@@ -26,159 +68,173 @@ html, body {
 body {
 	font-family: 'nunito', sans-serif;
 	font-weight: 300;
+	font-size: $base;
+}
+
+.top {
+	background: lighten($turquoise,25);
 }
 
 header {
-	background: $turquoise;
-	color: rgba($black,0.65);
-}
-
-.container {
-	@include display-flex;
-	@include flex-direction(column);
-	@include flex-wrap(nowrap);
-	@include justify-content(flex-start);
-	@include align-content(stretch);
-	@include align-items (stretch);
-	min-height: 100%;
-}
-
-.col {
-	@include flex(1);
-}
-
-.row {
-	@include display-flex;
-	@include flex-direction(row);
-	width:100%;
-}
-
-.wrapper {
-	padding: 4rem 1rem;
-	@media #{$large} {
-		padding: 4rem 2rem;
-	}
-}
-
-.logo {
-	display: inline-block;
-	font-size: 1rem;
-	line-height: 1;
-	text-align: center;
-	letter-spacing: 2px;
-}
-.site-name {
-	display: inline-block;
-	vertical-align: middle;
-}
-.wrapper {
-
-}
-section {
-		min-height: 400px;
-		background-position: center;
-		position: relative;
-		background-repeat: no-repeat;
-		background-size: cover;
-		&:after {
-			content: "";
-			height: 100%;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			@include background-image(linear-gradient(to bottom, transparent, $emerald));
-			opacity: 0.5;
-	}
-}
-
-//$colors: $emerald, $red,  $turquoise,$orange, $yellow;
-
-//@for $i from 1 through length($colors) {
-//    li:nth-child(#{length($colors)}n+#{$i}) {
-//        background: nth($colors, $i)
-//    }
-//}
-
-@mixin colors($max-count, $color-frequency){
-  $color: 360/$max-count;
-
-  @for $i from 1 through $max-count {
-    &:nth-child(#{$max-count}n + #{$i}) {
-      background: adjust_hue(hsl(($i - 1)*($color / $color-frequency), 80%, 60%),150);
-    }
-  }
-}
-
-nav {
-		@include display-flex;
-		@include flex(1);
-		
-	ul {
-		@extend .row;
-		@include display-flex;
-	@include flex-wrap(nowrap);
-	@include justify-content(stretch);
-	//@include align-content(center);
-	//@include align-items(center);
-		li {
-			display: block;
-			padding: 1rem;
-			@include align-content(center);
-			@extend .col;
-			@include colors(18,1);
+	padding: 1rem;
+	h1 {
+		display: inline-block;
+		vertical-align: middle;
+		color: $white;
+		&.logo {
+			font-size: $base;
+			line-height: 1;
 			text-align: center;
-			font-size: 1.333em;
-			line-height: 1.333;
-			font-weight: 400;
-			a {
-				color: $white;
-				opacity: 0.75;
-				[class^="icon-"], [class*=" icon-"] {
-				    //height: 32px;
-				    //width: 32px;
-				    display: block; 
-				    fill: currentColor; 
-				    opacity: 0.8;
-				}
-			}
+			letter-spacing: 2px;
+			margin-right: 1rem;
+			margin-top: 6px;
+		}
+		&.name {
+			font-size: $base * $ratio;
+			color: rgba($white, 1);
+			line-height: 1;
 		}
 	}
 }
 
-h1, h2 {
-	font-weight: 400;
-	line-height: 1.1;
-	margin-bottom: 1.333rem;
+.info {
+	padding: 1rem 2rem 2rem;
+	color: rgba($black, 0.65);
+	h2 {
+		font-size: $base * $ratio * 2;
+		font-weight: 400;
+		line-height: 1.1;
+		margin-bottom: $base * $ratio;
+	}
+	p {
+		font-size: $base * $ratio;
+		margin-bottom: $base * $ratio;
+		line-height: $ratio;
+	}
 }
 
-h1 {
-	font-size: 1.777em;
-	color: $white;
-	opacity: 0.65;
-	padding-bottom: 1rem;
+section {
+	min-height: 400px;
+	background-position: center;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&:after {
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include background-image(linear-gradient(to bottom, transparent, $emerald));
+		opacity: 0.9;
+	}
 }
 
-h2 {
-	font-size: 2.369em;
-	word-wrap: break-word;
-}
-
-strong {
-	font-weight: 400;
-}
-
-p {
-	font-size: 1.333em;
-	margin-bottom: 1.333rem;
-	line-height: 1.333;
+nav {
+	ul {
+		a {
+			color: $white;
+			display: block;
+			@include colors(18,1);
+			padding: 1rem 2rem;
+		}
+		li {
+			width: 100%;
+			font-weight: 400;
+			display: block;
+			[class^="icon-"], [class*=" icon-"] {
+				float: left;
+				margin-right: 1rem;
+				height: 32px;
+				width: 32px;
+				vertical-align: middle;
+				margin-top: -5px;
+				fill: currentColor;
+				clear: both;
+			}
+			h3 {
+				display: inline-block;
+				font-size: $base;
+				line-height: 1.333;
+			}
+			p {
+				display: none;
+			}
+		}
+	}
 }
 
 a {
 	text-decoration: none;
 }
 
-img {
-	width: 100%;
-	height: auto;
+strong {
+	font-weight: 400;
+}
+
+@media #{$large} {
+	.top {
+		@include display-flex;
+		@include flex-direction(row);
+		@include flex-wrap(nowrap);
+		@include justify-content(space-between);
+	}
+	section, .hero {
+		@include flex(1);
+	}
+	.hero {
+		@include flex(1.5);
+	}
+	.info {
+		padding: 3rem 4rem 5rem;
+		h2 {
+			font-size: $base * $ratio * 2.5;
+		}
+	}
+	header {
+		padding: 2rem 2rem 1rem;
+		h1.logo {
+			font-size: $base * $ratio;
+		}
+		h1.name {
+			font-size: $base * $ratio * 1.1;
+			letter-spacing: 0.25px;
+		}
+	}
+	nav ul{
+		@include display-flex;
+		@include flex-direction(row);
+		@include align-items(stretch);
+		@include justify-content(space-between);
+		a {
+			@include flex(1);
+			padding: 3rem 2rem 5rem;
+			&:hover {
+			}
+		}
+		li {
+			text-align: center;
+			[class^="icon-"], [class*=" icon-"] {
+				float: none;
+				height: 30%;
+				width: 30%;
+				display: block;
+				margin: 0 auto 1rem;
+			}
+			h3 {
+				display: block;
+				min-height: 3.3rem;
+				margin-bottom: 1rem;
+				font-size: $base * $ratio;
+			}
+			p {
+				display: block;
+				font-size: $base;
+				color: rgba($white, 0.9);
+				font-weight: 300;
+				line-height: 1.4;
+			}
+		}
+	}
 }
