@@ -3,15 +3,17 @@
  * Import this file using the following HTML or equivalent:
  * <link href="compass/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass";
 @import "compass/reset";
 @import "compass/css3/flexbox";
 
 $black: #000000;
 $white: #ffffff;
 $turquoise: #1abc9c;
+$emerald: #2ecc71;
 
-$large: "(min-width: 37.5em)";
-$small: "(max-width: 37.5em)";
+$large: "(min-width: 56em)";
+$small: "(max-width: 56em)";
 
 body {
 	font-family: 'nunito', sans-serif;
@@ -25,6 +27,9 @@ header {
 
 .wrapper {
 	padding: 4rem 1rem;
+	@media #{$large} {
+		padding: 4rem 2rem;
+	}
 }
 header, section, nav {
 
@@ -42,7 +47,19 @@ header, section, nav {
 		@include flex(1);
 	}
 	section {
-		@include flex(1);
+		min-height: 400px;
+		background-position: center;
+		position: relative;
+		&:after {
+			content: "";
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include background-image(linear-gradient(to bottom, transparent, $emerald));
+			opacity: 0.5;
+		}
 	}
 }
 

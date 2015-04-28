@@ -29,7 +29,7 @@
 </head>
 
 <body>
-	<div class="top">
+	<div id="background_cycler" class="top">
 		<header>
 			<div class="wrapper">
 				<h1>Fayetteville Coworking</h1>
@@ -44,11 +44,10 @@
 			</div>
 		</header>
 
-		<section>
-			<img src="img/1.jpg" alt="Fayetteville Coworking">
-		</section>
-	</div>
+		<section class="active" style="background-image: url(/img/1.jpg)"> </section>
 	
+	</div>
+
 	<nav>
 		<ul>
 			<li><a href="#" target="_blank">Subscribe to our mailing list</a></li>
