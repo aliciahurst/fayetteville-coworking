@@ -4,3 +4,29 @@
  * <link href="compass/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+$scale: 1.3333;
+
+body {
+	font-family: 'nunito', sans-serif;
+}
+
+header, section, nav {
+
+}
+
+h1 {
+	font-size: 3.157em;
+}
+
+h2 {
+	font-size: 2.369em;
+}
+
+p {
+	font-size: 1.333em;
+}
+
+a {
+	text-decoration: none;
+}

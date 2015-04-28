@@ -42,9 +42,9 @@
 	<p><strong>Will you be there?</strong></p>
 	</header>
 
-	<div class="photos">
+	<section>
 	<img src="img/1.jpg" alt="Fayetteville Coworking">
-	</div>
+	</section>
 
 	<nav>
 		<ul>
