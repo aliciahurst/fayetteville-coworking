@@ -32,7 +32,7 @@ Thumbs.db
 
 # SASS #
 ##########
-**/.sass-cache
+.sass-cache
 **/.sass-cache/*
 **/.map
 
