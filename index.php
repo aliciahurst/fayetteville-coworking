@@ -29,23 +29,26 @@
 </head>
 
 <body>
+	<div class="top">
+		<header>
+			<div class="wrapper">
+				<h1>Fayetteville Coworking</h1>
 
-	<header>
-	<h1>Fayetteville Coworking</h1>
+				<h2>Work Independently, Not Alone</h2>
 
-	<h2>Work Independently, Not Alone</h2>
+				<p>We combat the loneliness and distractions of working from home or alone at a coffee shop by working together.</p>
 
-	<p>We combat the loneliness and distractions of working from home or alone at a coffee shop by working together.</p>
+				<p>Every week independent workers gather during the workday to work alongside each other for real human interaction, productivity, and community.</p>
 
-	<p>Every week independent workers gather during the workday to work alongside each other for real human interaction, productivity, and community.</p>
+				<p><strong>Will you be there?</strong></p>
+			</div>
+		</header>
 
-	<p><strong>Will you be there?</strong></p>
-	</header>
-
-	<section>
-	<img src="img/1.jpg" alt="Fayetteville Coworking">
-	</section>
-
+		<section>
+			<img src="img/1.jpg" alt="Fayetteville Coworking">
+		</section>
+	</div>
+	
 	<nav>
 		<ul>
 			<li><a href="#" target="_blank">Subscribe to our mailing list</a></li>

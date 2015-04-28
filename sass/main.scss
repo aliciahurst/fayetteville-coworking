@@ -4,29 +4,76 @@
  * <link href="compass/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3/flexbox";
 
-$scale: 1.3333;
+$black: #000000;
+$white: #ffffff;
+$turquoise: #1abc9c;
+
+$large: "(min-width: 37.5em)";
+$small: "(max-width: 37.5em)";
 
 body {
 	font-family: 'nunito', sans-serif;
+	font-weight: 300;
 }
 
+header {
+	background: $turquoise;
+	color: rgba($black,0.65);
+}
+
+.wrapper {
+	padding: 4rem 1rem;
+}
 header, section, nav {
 
 }
 
+.top {
+	@media #{$large} {
+		@include display-flex;
+	}
+}
+
+nav {
+	ul {
+		@media #{$large} {
+			@include display-flex;
+		}
+	}
+}
+
+h1, h2 {
+	font-weight: 400;
+	line-height: 1.1;
+	margin-bottom: 1.333rem;
+}
+
 h1 {
-	font-size: 3.157em;
+	font-size: 1.777em;
 }
 
 h2 {
 	font-size: 2.369em;
+	word-wrap: break-word;
+}
+
+strong {
+	font-weight: 400;
 }
 
 p {
 	font-size: 1.333em;
+	margin-bottom: 1.333rem;
+	line-height: 1.333;
 }
 
 a {
 	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
