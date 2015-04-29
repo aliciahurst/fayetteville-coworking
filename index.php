@@ -17,6 +17,7 @@
 	<link rel='stylesheet' href='/css/main.css' type='text/css' media='all' />
 	<link href='http://fonts.googleapis.com/css?family=Nunito:300,400' rel='stylesheet' type='text/css'>
 	<script src="https://fontastic.s3.amazonaws.com/nJtawUMbWkg2xWqC5QTcXf/icons.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,9 +54,6 @@
 				</div>
 
 			<section id="background_cycler"> 
-				<script type="text/javascript">
-					$('#background_cycler').hide();
-				</script>
 				<div class="active" style="background-image: url(/img/1.jpg)"> </div>
 				<div style="background-image: url(/img/2.jpg)"> </div>
 				<div style="background-image: url(/img/3.jpg)"> </div>
@@ -64,23 +62,6 @@
 				<div style="background-image: url(/img/6.jpg)"> </div>
 				<div style="background-image: url(/img/7.jpg)"> </div>
 				<div style="background-image: url(/img/8.jpg)"> </div>
-		
-				<script type="text/javascript">
-function cycleImages(){
-      var $active = $('#background_cycler .active');
-      var $next = ($('#background_cycler .active').next().length > 0) ? $('#background_cycler .active').next() : $('#background_cycler div:first');
-      $next.css('z-index',2);//move the next image up the pile
-	  $active.fadeOut(1500,function(){//fade out the top image
-	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
-      $next.css('z-index',3).addClass('active');//make the next image the top one
-      });
-    }
-
-    $(window).load(function(){
-		$('#background_cycler').fadeIn(1500);
-		  // run every 7s
-		  setInterval('cycleImages()', 700);
-    })</script>
     	</section>
 		</div>
 
@@ -126,6 +107,26 @@ function cycleImages(){
 		</nav>
 
 	</div>
+
+	<script type="text/javascript">
+					$('#background_cycler').hide();
+				</script>
+				<script type="text/javascript">
+function cycleImages(){
+      var $active = $('#background_cycler .active');
+      var $next = ($('#background_cycler .active').next().length > 0) ? $('#background_cycler .active').next() : $('#background_cycler div:first');
+      $next.css('z-index',2);//move the next image up the pile
+	  $active.fadeOut(3000,function(){//fade out the top image
+	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+      $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
+
+    $(window).load(function(){
+		$('#background_cycler').fadeIn(3000);
+		  // run every 7s
+		  setInterval('cycleImages()', 3000);
+    })</script>
 
 </body>
 </html>
