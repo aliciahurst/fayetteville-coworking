@@ -67,40 +67,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 59, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 .hidden {
   display: none;
 }
 
-/* line 63, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 html, body {
   height: 100%;
   margin: 0;
 }
 
-/* line 68, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 body {
   font-family: 'nunito', sans-serif;
   font-weight: 300;
   font-size: 1rem;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .top {
   background: #baf7ed;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 header {
   padding: 1rem;
 }
-/* line 80, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 header h1 {
   display: inline-block;
   vertical-align: middle;
-  color: #ffffff;
+  color: rgba(58, 185, 163, 0.53);
 }
-/* line 84, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 header h1.logo {
   font-size: 1rem;
   line-height: 1;
@@ -109,10 +109,9 @@ header h1.logo {
   margin-right: 1rem;
   margin-top: 6px;
 }
-/* line 92, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 header h1.name {
   font-size: 1.333rem;
-  color: white;
   line-height: 1;
 }
 
@@ -164,12 +163,12 @@ section :after {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0N2ViOTkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjEuMCIgeDI9IjAuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiYWY3ZDkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #47eb99));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), #47eb99);
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #47eb99);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #47eb99);
+  background-image: -webkit-gradient(linear, 100% 100%, 0% 0%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #baf7d9));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), #baf7d9);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), #baf7d9);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), #baf7d9);
   opacity: 0.9;
 }
 
@@ -179,7 +178,7 @@ nav ul a {
   display: block;
   padding: 1rem 2rem;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 1) {
   background: #47eb99;
   -moz-transition: background, ease-in-out 0.2s;
@@ -187,11 +186,11 @@ nav ul a:nth-child(18n + 1) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 1):hover {
   background: #004d26;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 2) {
   background: #47ebcf;
   -moz-transition: background, ease-in-out 0.2s;
@@ -199,11 +198,11 @@ nav ul a:nth-child(18n + 2) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 2):hover {
   background: #004d40;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 3) {
   background: #47cfeb;
   -moz-transition: background, ease-in-out 0.2s;
@@ -211,11 +210,11 @@ nav ul a:nth-child(18n + 3) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 3):hover {
   background: #00404d;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 4) {
   background: #4799eb;
   -moz-transition: background, ease-in-out 0.2s;
@@ -223,11 +222,11 @@ nav ul a:nth-child(18n + 4) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 4):hover {
   background: #00264d;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 5) {
   background: #4763eb;
   -moz-transition: background, ease-in-out 0.2s;
@@ -235,11 +234,11 @@ nav ul a:nth-child(18n + 5) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 5):hover {
   background: #000d4d;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 6) {
   background: #6347eb;
   -moz-transition: background, ease-in-out 0.2s;
@@ -247,11 +246,11 @@ nav ul a:nth-child(18n + 6) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 6):hover {
   background: #0d004d;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 7) {
   background: #9947eb;
   -moz-transition: background, ease-in-out 0.2s;
@@ -259,11 +258,11 @@ nav ul a:nth-child(18n + 7) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 7):hover {
   background: #26004d;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 8) {
   background: #cf47eb;
   -moz-transition: background, ease-in-out 0.2s;
@@ -271,11 +270,11 @@ nav ul a:nth-child(18n + 8) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 8):hover {
   background: #40004d;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 9) {
   background: #eb47cf;
   -moz-transition: background, ease-in-out 0.2s;
@@ -283,11 +282,11 @@ nav ul a:nth-child(18n + 9) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 9):hover {
   background: #4d0040;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 10) {
   background: #eb4799;
   -moz-transition: background, ease-in-out 0.2s;
@@ -295,11 +294,11 @@ nav ul a:nth-child(18n + 10) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 10):hover {
   background: #4d0026;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 11) {
   background: #eb4763;
   -moz-transition: background, ease-in-out 0.2s;
@@ -307,11 +306,11 @@ nav ul a:nth-child(18n + 11) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 11):hover {
   background: #4d000d;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 12) {
   background: #eb6347;
   -moz-transition: background, ease-in-out 0.2s;
@@ -319,11 +318,11 @@ nav ul a:nth-child(18n + 12) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 12):hover {
   background: #4d0d00;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 13) {
   background: #eb9947;
   -moz-transition: background, ease-in-out 0.2s;
@@ -331,11 +330,11 @@ nav ul a:nth-child(18n + 13) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 13):hover {
   background: #4d2600;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 14) {
   background: #ebcf47;
   -moz-transition: background, ease-in-out 0.2s;
@@ -343,11 +342,11 @@ nav ul a:nth-child(18n + 14) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 14):hover {
   background: #4d4000;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 15) {
   background: #cfeb47;
   -moz-transition: background, ease-in-out 0.2s;
@@ -355,11 +354,11 @@ nav ul a:nth-child(18n + 15) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 15):hover {
   background: #404d00;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 16) {
   background: #99eb47;
   -moz-transition: background, ease-in-out 0.2s;
@@ -367,11 +366,11 @@ nav ul a:nth-child(18n + 16) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 16):hover {
   background: #264d00;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 17) {
   background: #63eb47;
   -moz-transition: background, ease-in-out 0.2s;
@@ -379,11 +378,11 @@ nav ul a:nth-child(18n + 17) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 17):hover {
   background: #0d4d00;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 nav ul a:nth-child(18n + 18) {
   background: #47eb63;
   -moz-transition: background, ease-in-out 0.2s;
@@ -391,7 +390,7 @@ nav ul a:nth-child(18n + 18) {
   -webkit-transition: background, ease-in-out 0.2s;
   transition: background, ease-in-out 0.2s;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul a:nth-child(18n + 18):hover {
   background: #004d0d;
 }

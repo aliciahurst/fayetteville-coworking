@@ -10,6 +10,7 @@
 $black: #000000;
 $white: #ffffff;
 $turquoise: #47EBCF;
+$turqlight: lighten($turquoise,25);
 $emerald: #47EB99;
 $red: #e74c3c;
 $yellow: #f1c40f;
@@ -72,7 +73,7 @@ body {
 }
 
 .top {
-	background: lighten($turquoise,25);
+	background: $turqlight;
 }
 
 header {
@@ -80,7 +81,7 @@ header {
 	h1 {
 		display: inline-block;
 		vertical-align: middle;
-		color: $white;
+		color: rgba(58, 185, 163, 0.53);
 		&.logo {
 			font-size: $base;
 			line-height: 1;
@@ -91,7 +92,6 @@ header {
 		}
 		&.name {
 			font-size: $base * $ratio;
-			color: rgba($white, 1);
 			line-height: 1;
 		}
 	}
@@ -137,7 +137,7 @@ section {
 		position: absolute;
 		top: 0;
 		left: 0;
-		@include background-image(linear-gradient(to bottom, transparent, $emerald));
+		@include background-image(linear-gradient(to top left, transparent, lighten($emerald,25)));
 		opacity: 0.9;
 	}
 }
