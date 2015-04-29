@@ -12,9 +12,9 @@
 	<meta property="og:description" content="Fayetteville Coworking is a new community for independent workers in Fayetteville, NC area, including Hope Mills, Lumberton, Sanford, and Fort Bragg." />
 	<meta property="og:url" content="http://fayettevillecoworking.com" />
 	<meta property="og:site_name" content="Fayetteville Coworking" />
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel='stylesheet' href='/css/main.css' type='text/css' media='all' />
+	<link rel="shortcut icon" href="apr15/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="apr15/img/favicon.ico" type="image/x-icon">
+	<link rel='stylesheet' href='apr15/css/main.css' type='text/css' media='all' />
 	<link href='http://fonts.googleapis.com/css?family=Nunito:300,400' rel='stylesheet' type='text/css'>
 	<script src="https://fontastic.s3.amazonaws.com/nJtawUMbWkg2xWqC5QTcXf/icons.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script> 
@@ -55,20 +55,20 @@
 
 			<section id="background_cycler"> 
 				<div class="active" style="background-image: url(/img/1.jpg)"> </div>
-				<div style="background-image: url(/img/2.jpg)"> </div>
-				<div style="background-image: url(/img/3.jpg)"> </div>
-				<div style="background-image: url(/img/4.jpg)"> </div>
-				<div style="background-image: url(/img/5.jpg)"> </div>
-				<div style="background-image: url(/img/6.jpg)"> </div>
-				<div style="background-image: url(/img/7.jpg)"> </div>
-				<div style="background-image: url(/img/8.jpg)"> </div>
+				<div style="background-image: url(/apr15/img/2.jpg)"> </div>
+				<div style="background-image: url(/apr15/img/3.jpg)"> </div>
+				<div style="background-image: url(/apr15/img/4.jpg)"> </div>
+				<div style="background-image: url(/apr15/img/5.jpg)"> </div>
+				<div style="background-image: url(/apr15/img/6.jpg)"> </div>
+				<div style="background-image: url(/apr15/img/7.jpg)"> </div>
+				<div style="background-image: url(/apr15/img/8.jpg)"> </div>
     	</section>
 		</div>
 
 		<nav>
 			<ul>
 				<li class="hidden"></li>
-				<a href="#" target="_blank">
+				<a href="http://eepurl.com/bliEvD" target="_blank">
 					<li>
 						<svg class="icon-list"><use xlink:href="#icon-list"></use></svg>
 						<h3>Subscribe to our mailing list</h3>
@@ -89,7 +89,7 @@
 						<p>If you're an avid tweeter, you'll love reminders about events and enjoying the fun stuff we share.</p>
 					</li>
 				</a>
-				<a href="#" target="_blank">
+				<a href="https://www.google.com/calendar/embed?src=fayettevillecoworking%40gmail.com&ctz=America/New_York " target="_blank">
 					<li>
 						<svg class="icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
 						<h3>See our upcoming events</h3>
