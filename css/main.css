@@ -138,13 +138,26 @@ header h1.name {
 /* line 116, ../sass/main.scss */
 section {
   min-height: 400px;
-  background-position: center;
   position: relative;
+}
+/* line 119, ../sass/main.scss */
+section div {
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
-/* line 122, ../sass/main.scss */
-section:after {
+/* line 129, ../sass/main.scss */
+section div.active {
+  z-index: 3;
+}
+/* line 133, ../sass/main.scss */
+section :after {
   content: "";
   height: 100%;
   width: 100%;
@@ -160,7 +173,7 @@ section:after {
   opacity: 0.9;
 }
 
-/* line 136, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 nav ul a {
   color: #ffffff;
   display: block;
@@ -382,13 +395,13 @@ nav ul a:nth-child(18n + 18) {
 nav ul a:nth-child(18n + 18):hover {
   background: #004d0d;
 }
-/* line 142, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 nav ul li {
   width: 100%;
   font-weight: 400;
   display: block;
 }
-/* line 146, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
 nav ul li [class^="icon-"], nav ul li [class*=" icon-"] {
   float: left;
   margin-right: 1rem;
@@ -399,29 +412,29 @@ nav ul li [class^="icon-"], nav ul li [class*=" icon-"] {
   fill: currentColor;
   clear: both;
 }
-/* line 156, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 nav ul li h3 {
   display: inline-block;
   font-size: 1rem;
   line-height: 1.333;
 }
-/* line 161, ../sass/main.scss */
+/* line 172, ../sass/main.scss */
 nav ul li p {
   display: none;
 }
 
-/* line 168, ../sass/main.scss */
+/* line 179, ../sass/main.scss */
 a {
   text-decoration: none;
 }
 
-/* line 172, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 strong {
   font-weight: 400;
 }
 
 @media (min-width: 60em) {
-  /* line 177, ../sass/main.scss */
+  /* line 188, ../sass/main.scss */
   .top {
     display: -webkit-flex;
     display: flex;
@@ -433,42 +446,46 @@ strong {
     justify-content: space-between;
   }
 
-  /* line 183, ../sass/main.scss */
+  /* line 194, ../sass/main.scss */
   section, .hero {
     -webkit-flex: 1;
     flex: 1;
   }
 
-  /* line 186, ../sass/main.scss */
+  /* line 197, ../sass/main.scss */
   .hero {
     -webkit-flex: 1.5;
     flex: 1.5;
   }
 
-  /* line 189, ../sass/main.scss */
+  /* line 200, ../sass/main.scss */
   .info {
     padding: 3rem 4rem 5rem;
   }
-  /* line 191, ../sass/main.scss */
+  /* line 202, ../sass/main.scss */
   .info h2 {
     font-size: 3.3325rem;
   }
+  /* line 204, ../sass/main.scss */
+  .info h2 span {
+    display: block;
+  }
 
-  /* line 195, ../sass/main.scss */
+  /* line 209, ../sass/main.scss */
   header {
     padding: 2rem 2rem 1rem;
   }
-  /* line 197, ../sass/main.scss */
+  /* line 211, ../sass/main.scss */
   header h1.logo {
     font-size: 1.333rem;
   }
-  /* line 200, ../sass/main.scss */
+  /* line 214, ../sass/main.scss */
   header h1.name {
     font-size: 1.4663rem;
     letter-spacing: 0.25px;
   }
 
-  /* line 205, ../sass/main.scss */
+  /* line 219, ../sass/main.scss */
   nav ul {
     display: -webkit-flex;
     display: flex;
@@ -479,17 +496,17 @@ strong {
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
-  /* line 210, ../sass/main.scss */
+  /* line 224, ../sass/main.scss */
   nav ul a {
     -webkit-flex: 1;
     flex: 1;
     padding: 3rem 2rem 5rem;
   }
-  /* line 216, ../sass/main.scss */
+  /* line 230, ../sass/main.scss */
   nav ul li {
     text-align: center;
   }
-  /* line 218, ../sass/main.scss */
+  /* line 232, ../sass/main.scss */
   nav ul li [class^="icon-"], nav ul li [class*=" icon-"] {
     float: none;
     height: 30%;
@@ -497,14 +514,14 @@ strong {
     display: block;
     margin: 0 auto 1rem;
   }
-  /* line 225, ../sass/main.scss */
+  /* line 239, ../sass/main.scss */
   nav ul li h3 {
     display: block;
     min-height: 3.3rem;
     margin-bottom: 1rem;
     font-size: 1.333rem;
   }
-  /* line 231, ../sass/main.scss */
+  /* line 245, ../sass/main.scss */
   nav ul li p {
     display: block;
     font-size: 1rem;

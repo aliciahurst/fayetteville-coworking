@@ -31,7 +31,7 @@
 
 <body>
 	<div class="container">
-		<div id="background_cycler" class="top">
+		<div class="top">
 
 				<div class="hero">
 
@@ -41,7 +41,7 @@
 					</header>
 
 					<div class="info">
-						<h2>Work Independently, Not Alone</h2>
+						<h2>Work Independently, <span>Not Alone</span></h2>
 
 						<p>We combat the loneliness and distractions of working from home or alone at a coffee shop by working together.</p>
 
@@ -52,8 +52,36 @@
 
 				</div>
 
-			<section class="active images" style="background-image: url(/img/1.jpg)"> </section>
+			<section id="background_cycler"> 
+				<script type="text/javascript">
+					$('#background_cycler').hide();
+				</script>
+				<div class="active" style="background-image: url(/img/1.jpg)"> </div>
+				<div style="background-image: url(/img/2.jpg)"> </div>
+				<div style="background-image: url(/img/3.jpg)"> </div>
+				<div style="background-image: url(/img/4.jpg)"> </div>
+				<div style="background-image: url(/img/5.jpg)"> </div>
+				<div style="background-image: url(/img/6.jpg)"> </div>
+				<div style="background-image: url(/img/7.jpg)"> </div>
+				<div style="background-image: url(/img/8.jpg)"> </div>
+		
+				<script type="text/javascript">
+function cycleImages(){
+      var $active = $('#background_cycler .active');
+      var $next = ($('#background_cycler .active').next().length > 0) ? $('#background_cycler .active').next() : $('#background_cycler div:first');
+      $next.css('z-index',2);//move the next image up the pile
+	  $active.fadeOut(1500,function(){//fade out the top image
+	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+      $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
 
+    $(window).load(function(){
+		$('#background_cycler').fadeIn(1500);
+		  // run every 7s
+		  setInterval('cycleImages()', 700);
+    })</script>
+    	</section>
 		</div>
 
 		<nav>

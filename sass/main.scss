@@ -115,11 +115,22 @@ header {
 
 section {
 	min-height: 400px;
-	background-position: center;
 	position: relative;
-	background-repeat: no-repeat;
-	background-size: cover;
-	&:after {
+	div {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		&.active {
+			z-index: 3;
+		}
+	}
+	:after {
 		content: "";
 		height: 100%;
 		width: 100%;
@@ -190,6 +201,9 @@ strong {
 		padding: 3rem 4rem 5rem;
 		h2 {
 			font-size: $base * $ratio * 2.5;
+			span {
+				display: block;
+			}
 		}
 	}
 	header {
