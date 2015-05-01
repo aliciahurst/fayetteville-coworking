@@ -78,10 +78,10 @@ body {
 
 header {
 	padding: 1rem;
+	color: rgba(58, 185, 163, 0.53);
 	h1 {
 		display: inline-block;
 		vertical-align: middle;
-		color: rgba(58, 185, 163, 0.53);
 		&.logo {
 			font-size: $base;
 			line-height: 1;
@@ -112,6 +112,33 @@ header {
 		line-height: $ratio;
 	}
 }
+
+h3 {
+	text-align: right;
+	font-size: 1rem;
+	display: none;
+	color: rgba(58, 185, 163, 0.53);
+	opacity: 0.5;
+	font-weight: 400;
+	a {
+		color: currentColor;
+		&:hover {
+			color: white;
+		}
+	}
+	svg {
+		height: 40px;
+		width: 40px;
+		vertical-align: middle;
+		float: right;
+		color: currentColor;
+		display: inline-block;
+		&.icon-ah {
+			height: 32px;
+			margin-top: -3px;
+		}
+	}
+}		
 
 section {
 	min-height: 400px;
@@ -196,6 +223,10 @@ strong {
 	}
 	.hero {
 		@include flex(1.5);
+	}
+	h3 {
+		display: inline-block;
+		float: right;
 	}
 	.info {
 		padding: 3rem 4rem 5rem;
