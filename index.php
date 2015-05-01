@@ -12,6 +12,7 @@
 	<meta property="og:description" content="Fayetteville Coworking is a new community for independent workers in Fayetteville, NC area, including Hope Mills, Lumberton, Sanford, and Fort Bragg." />
 	<meta property="og:url" content="http://fayettevillecoworking.com" />
 	<meta property="og:site_name" content="Fayetteville Coworking" />
+	<meta property="og:image" content="http://fayettevillecoworking.com/apr15/img/10.jpg" />
 	<link rel="shortcut icon" href="/apr15/img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/apr15/img/favicon.ico" type="image/x-icon">
 	<link rel='stylesheet' href='/apr15/css/main.css' type='text/css' media='all' />
@@ -44,7 +45,7 @@
 				</div>
 
 			<section id="background_cycler"> 
-				<div class="active" style="background-image: url(/arp15/img/4.jpg)"> </div>
+				<div class="active" style="background-image: url(/arp15/img/4.jpg)"></div>
 				<div style="background-image: url(/apr15/img/4.jpg)"> </div>
 				<div style="background-image: url(/apr15/img/2.jpg)"> </div>
 				<div style="background-image: url(/apr15/img/10.jpg)"> </div>
@@ -126,7 +127,7 @@
 					    }
 
     $(window).load(function(){
-		$('#background_cycler').fadeIn(3000);
+		$('#background_cycler').fadeIn(0);
 		  // run every 7s
 		  setInterval('cycleImages()', 3000);
     })
