@@ -102,15 +102,12 @@
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
 	  ga('create', 'UA-45058744-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
 	<script type="text/javascript">
+					// Cycling a background image with jQuery by Simon Battersby, http://www.simonbattersby.com/blog/cycling-a-background-image-with-jquery
 					$('#background_cycler').hide();
-				</script>
-	<script type="text/javascript">
 					function cycleImages(){
 					      var $active = $('#background_cycler .active');
 					      var $next = ($('#background_cycler .active').next().length > 0) ? $('#background_cycler .active').next() : $('#background_cycler div:first');
