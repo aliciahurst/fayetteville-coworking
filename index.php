@@ -35,7 +35,7 @@
 
 						<p>We combat the loneliness and distractions of working from home or alone at a coffee shop by working together.</p>
 
-						<p>Every week independent workers gather during the workday to work alongside each other for real human interaction, productivity, and community.</p>
+						<p>Every week independent workers gather during the day to get work done alongside each other, for real human interaction, productivity, and community.</p>
 
 						<p><strong>Will you be there?</strong></p>
 
@@ -45,6 +45,7 @@
 
 			<section id="background_cycler"> 
 				<div class="active" style="background-image: url(/arp15/img/4.jpg)"> </div>
+				<div style="background-image: url(/apr15/img/4.jpg)"> </div>
 				<div style="background-image: url(/apr15/img/2.jpg)"> </div>
 				<div style="background-image: url(/apr15/img/10.jpg)"> </div>
 				<div style="background-image: url(/apr15/img/9.jpg)"> </div>
@@ -55,6 +56,7 @@
 				<div style="background-image: url(/apr15/img/7.jpg)"> </div>
 				<div style="background-image: url(/apr15/img/8.jpg)"> </div>
 				<div style="background-image: url(/apr15/img/6.jpg)"> </div>
+				<div style="background-image: url(/apr15/img/4.jpg)"> </div>
     	</section>
 		</div>
 
